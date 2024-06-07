@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons on Photo</title>
+    <style>
+        .photo-container {
+            position: relative;
+            width: 600px;
+            height: 380px;
+        }
+        .photo-container img {
+            width: 100%;
+            height: auto;
+        }
+        .icon {
+            position: absolute;
+            bottom: 16px;
+            width: 32px;
+            height: 32px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 2px solid #000;
+            text-align: center;
+            line-height: 32px;
+            cursor: pointer;
+        }
+        .icon.active {
+            background-color: red;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-container">
+        <img src="river.jpg" alt="River">
+        <div class="icon" style="left: calc(50% - 16px);">1</div>
+        <div class="icon active" style="left: calc(50% + 48px);">2</div>
+        <div class="icon" style="left: calc(50% - 80px);">3</div>
+    </div>
+</body>
+</html>

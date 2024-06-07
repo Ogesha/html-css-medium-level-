@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Columns Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        .column {
+            width: 150px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            transition: box-shadow 0.3s;
+        }
+        .column:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+    </div>
+</body>
+</html>

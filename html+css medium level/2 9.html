@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нумерация страниц</title>
+    <style>
+        .pager {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 5px;
+        }
+        .pager li {
+            display: inline;
+        }
+        .pager-current span {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 3px;
+        }
+        .pager-item a {
+            padding: 5px 10px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .pager-next a {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item-list">
+        <ul class="pager">
+            <li class="pager-current first"><span>1</span></li>
+            <li class="pager-item"><a href="/node?page=1" title="На страницу номер 2">2</a></li>
+            <li class="pager-item"><a href="/node?page=2" title="На страницу номер 3">3</a></li>
+            <li class="pager-item"><a href="/node?page=3" title="На страницу номер 4">4</a></li>
+            <li class="pager-next last"><a href="/node?page=1" title="На следующую страницу">›</a></li>
+        </ul>
+    </div>
+    <p>Содержание</p>
+</body>
+</html>
